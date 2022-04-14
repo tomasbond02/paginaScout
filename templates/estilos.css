@@ -5,12 +5,14 @@
 body{
     margin: 0px;
 }
+
 header{
     background-color: blueviolet;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 10px;
 }
 
 .logo{
@@ -24,6 +26,7 @@ header{
     font-family: sans-serif;
     font-size: 30px;
     margin: 10px;
+    text-decoration: none;
 }
 
 footer{
@@ -37,18 +40,31 @@ footer{
     font-size: 60px;
 }
 
-main{
-    padding-left: 25%;
+.main-content{
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
     flex-wrap: wrap;
 }
 
 .articuloIndex{
-    width: 35%;
+    width: 40%;
     font-size: 20px;
     
 }
 
+aside{
+    width: 920px;
+    background-color: blueviolet;
+}
 
+.d-flex{
+    display: flex;
+}
+
+.titulo-noticias{
+    font-size: 20px;
+    color: white;
+    font-weight: 900;
+}
 
