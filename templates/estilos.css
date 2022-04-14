@@ -29,16 +29,14 @@ header{
     text-decoration: none;
 }
 
-footer{
-    background-color: green;
-}
 
-/*main index*/
 
 .tituloPrin{
     text-align: center;
     font-size: 60px;
 }
+
+/*main*/
 
 .main-content{
     display: flex;
@@ -47,24 +45,28 @@ footer{
     flex-wrap: wrap;
 }
 
-.articuloIndex{
+.articuloMain{
     width: 40%;
     font-size: 20px;
     
 }
 
 aside{
-    width: 920px;
+    width: 1500px;
     background-color: blueviolet;
+    font-size: 30px;
+    color: white;
+    font-style: italic;
 }
 
 .d-flex{
     display: flex;
 }
 
-.titulo-noticias{
-    font-size: 20px;
-    color: white;
-    font-weight: 900;
+.imgAside{
+    text-align: center;
 }
 
+footer{
+    background-color: green;
+}
