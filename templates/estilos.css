@@ -1,0 +1,54 @@
+/*Tomas Bond*/
+
+
+/*comunes a todas las paginas*/
+body{
+    margin: 0px;
+}
+header{
+    background-color: blueviolet;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width: 10%;
+    padding: 15px;
+}
+
+
+.navitem{
+    color: black;
+    font-family: sans-serif;
+    font-size: 30px;
+    margin: 10px;
+}
+
+footer{
+    background-color: green;
+}
+
+/*main index*/
+
+.tituloPrin{
+    text-align: center;
+    font-size: 60px;
+}
+
+main{
+    padding-left: 25%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.articuloIndex{
+    width: 35%;
+    font-size: 20px;
+    
+}
+
+
+
