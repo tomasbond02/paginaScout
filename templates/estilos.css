@@ -12,12 +12,10 @@ header{
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 10px;
 }
 
 .logo{
     width: 10%;
-    padding: 15px;
 }
 
 
@@ -29,11 +27,48 @@ header{
     text-decoration: none;
 }
 
-
+.divPrincipal{
+    background-image: url(img/caminantes/WhatsApp\ Image\ 2022-04-13\ at\ 8.41.54\ PM.jpeg);
+    color: white;
+    font-size: 30px;
+}
 
 .tituloPrin{
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    flex: 1;
+    max-width: 100%;
     font-size: 60px;
+    padding-top: 250px;
+}
+
+.descripPrin{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    flex: 1;
+    max-width: 100%;
+    padding-bottom: 600px;
+}
+
+/*baden powell description*/
+aside{
+    width: 1500px;
+    background-color: blueviolet;
+    font-size: 30px;
+    color: white;
+    font-style: italic;
+}
+
+.d-flex{
+    display: flex;
+}
+
+.imgAside{
+    text-align: center;
 }
 
 /*main*/
@@ -51,20 +86,10 @@ header{
     
 }
 
-aside{
-    width: 1500px;
-    background-color: blueviolet;
-    font-size: 30px;
-    color: white;
-    font-style: italic;
-}
-
-.d-flex{
-    display: flex;
-}
-
-.imgAside{
+h2{
     text-align: center;
+    font-size: 50px;
+
 }
 
 footer{
