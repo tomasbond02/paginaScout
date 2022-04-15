@@ -56,23 +56,48 @@ footer{
     text-decoration: none;
 }
 
-.footerDescrip{
-    margin: 0;
-    text-align: center;
-    font-size: 25px;
+.documentosDescargables li {
+    list-style:none;
+}
+.documentosDescargables i {
+    margin: 0px 10px 0px;
 }
 
 .socialIcons{
     padding-right: 50px;
 }
 
+.footerDescrip{
+    margin: 0;
+    text-align: center;
+    font-size: 25px;
+}
+
+
+
 /*empieza index*/
 /*Titulo principal y foto*/
+
 .divPrincipal{
     background-image: url(img/caminantes/WhatsApp\ Image\ 2022-04-13\ at\ 8.41.54\ PM.jpeg);
-    color: white;
-    font-size: 30px;
+    padding: 400px 100px;
+    text-align: center;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
 }
+
+.divPrincipal:before {
+    content:'';
+    position: absolute;
+        top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.308);
+}
+
 
 .tituloPrin{
     display: flex;
@@ -82,7 +107,9 @@ footer{
     flex: 1;
     max-width: 100%;
     font-size: 60px;
-    padding-top: 250px;
+    color: white;
+    position: relative;
+
 }
 
 .descripPrin{
@@ -92,7 +119,9 @@ footer{
     margin: 0;
     flex: 1;
     max-width: 100%;
-    padding-bottom: 600px;
+    color: white;
+    font-size: 30px;
+    position: relative;
 }
 
 /*aside*/
@@ -108,10 +137,16 @@ aside{
     display: flex;
 }
 
-.imgAside{
-    text-align: center;
+
+.divAside{
+    margin: 10px;
+    font-size: 25px;
 }
 
+.divAside img{
+    margin: 0;
+    width: 100%;
+}
 /*main*/
 
 .main-content{
