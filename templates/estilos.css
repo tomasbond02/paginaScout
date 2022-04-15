@@ -5,7 +5,7 @@
 body{
     margin: 0px;
 }
-
+/*header*/
 header{
     background-color: rgb(133, 44, 216);
     display: flex;
@@ -27,6 +27,46 @@ header{
     text-decoration: none;
 }
 
+
+/*Footer*/
+footer{
+    background-color: green;
+}
+.divFooter{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logoFooter{
+    width: 6%;
+    padding-left: 50px;
+}
+
+.titulosLinks{
+    font-size: 30px;
+    margin-top: 15px;
+}
+
+.footerLinks{
+    color: black;
+    font-family: sans-serif;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footerDescrip{
+    margin: 0;
+    text-align: center;
+}
+
+.socialIcons{
+    padding-right: 50px;
+}
+
+/*empieza index*/
+/*Titulo principal y foto*/
 .divPrincipal{
     background-image: url(img/caminantes/WhatsApp\ Image\ 2022-04-13\ at\ 8.41.54\ PM.jpeg);
     color: white;
@@ -54,7 +94,7 @@ header{
     padding-bottom: 600px;
 }
 
-/*baden powell description*/
+/*aside*/
 aside{
     width: 1500px;
     background-color: rgb(56, 17, 94);
@@ -90,8 +130,4 @@ h2{
     text-align: center;
     font-size: 50px;
 
-}
-
-footer{
-    background-color: green;
 }
