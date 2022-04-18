@@ -214,6 +214,16 @@ h2{
     margin: 20px;
 }
 
+.articuloMainManada img{
+    max-width: 20%;
+}
+
+.articuloMainManada p{
+    font-size: 20px;
+    margin: 20px;
+    text-decoration: none;
+}
+
 
 .dirisFto{
     margin: 10px;
