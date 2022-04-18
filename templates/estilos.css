@@ -171,4 +171,51 @@ h2{
 }
 
 
+/*aqui empieza detalle.html*/
 
+.divPrincipalManada{
+    background-image: url(img/manada/grande.jpg);
+    padding: 400px 100px;
+    text-align: center;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+
+.descripPrinManada{
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0;
+    flex: 1;
+    max-width: 100%;
+    color: white;
+    font-size: 30px;
+    position: relative;
+}
+
+
+.divPrincipalManada:before {
+    content:'';
+    position: absolute;
+        top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.308);
+}
+
+.descripManada{
+    font-size: 20px;
+    text-align: center;
+    margin: 20px;
+}
+
+
+.dirisFto{
+    margin: 10px;
+    max-width: 20%;
+}
