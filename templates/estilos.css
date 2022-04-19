@@ -29,7 +29,7 @@ header{
 
 /*Footer*/
 footer{
-    background-color: green;
+    background-color: #00c853;
 }
 .divFooter{
     display: flex;
@@ -68,11 +68,14 @@ footer{
 
 .footerDescrip{
     margin: 0;
+    padding-bottom: 20px;
     text-align: center;
     font-size: 25px;
 }
 
-
+.mt20{
+    margin-top: 20px;
+}
 
 /*empieza index*/
 /*Titulo principal y foto*/
@@ -244,9 +247,6 @@ h2{
     position: relative;
     background-color: rgba(148, 148, 148, 0.103);
 }
-
-
-
 
 .dirisFto{
     margin: 10px;
