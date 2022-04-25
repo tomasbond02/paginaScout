@@ -5,6 +5,15 @@
 body{
     margin: 0px;
 }
+
+.linea {
+    border-top: 1px solid #00c853;
+    height: 2px;
+    max-width: 500px;
+    padding: 0;
+    margin: 50px auto 0 auto;
+}
+
 /*header*/
 header{
     background-color: rgb(133, 44, 216);
@@ -177,6 +186,13 @@ h2{
     text-decoration: none;
 }
 
+.articuloMain p{
+    font-size: 30px
+}
+
+.articuloMain li {
+    font-size: 30px;
+}
 
 /*aqui empieza infogral.html*/
 
