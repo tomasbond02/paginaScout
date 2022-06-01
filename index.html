@@ -1,79 +1,146 @@
 <!DOCTYPE html>
 <!--Tomas Bond-->
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Sitio web oficial del Grupo Scout Dr Rene Favaloro, distrito 2 zona 2, buenos aires argentina. Scout de Argentina">
-    <meta name="keywords" content="scouts, scout, grupo, calasanz, rosario, argentina, aire libre, scoutismo, escultismo, juventud, jóvenes, voluntarios, voluntariado">
+    <meta name="description"
+        content="Sitio web oficial del Grupo Scout Dr Rene Favaloro, distrito 2 zona 2, buenos aires argentina. Scout de Argentina">
+    <meta name="keywords"
+        content="scouts, scout, grupo, calasanz, rosario, argentina, aire libre, scoutismo, escultismo, juventud, jóvenes, voluntarios, voluntariado">
     <link rel="shortcut icon" href="templates/img/descarga.png">
     <link rel="stylesheet" href="templates/estilos.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
     <title>Grupo Scout Favaloro </title>
 </head>
+
 <body>
-    <header >
-        <img class="logo" src="templates/img/descarga.png" alt="logo scout">
-        <nav>
-            <a class="navitem" href="index.html">Inicio</a>
-            <a class="navitem" href="infogral.html">Información</a>
-            <a class="navitem" href="#archivos">documentacion</a>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark">
+            <div class="container-fluid">
+                <a href="index.html">
+                    <img src="templates/img/descarga.png" alt="Logo scout" class="logoImg">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="infogral.html">Informacion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#archivos">documentacion</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
-   
-    <div class="d-flex"> 
+
+    <div class="d-flex">
         <aside>
             <div class="divAside">
                 <img src="templates/img/descarga.jpg" alt="foto de baden powell">
-                <p>Robert Stephenson Smyth Baden-Powell, I barón Baden-Powell de Gilwell (Paddington, (Londres) Reino Unido de Gran Bretaña e Irlanda, 22 de febrero de 1857 - Nyeri, (Kenia) Imperio Británico, 8 de enero de 1941), conocido como Robert Baden-Powell, fue un militar y escritor británico fundador del Movimiento Scout Mundial.</p>
+                <p>Robert Stephenson Smyth Baden-Powell, I barón Baden-Powell de Gilwell (Paddington, (Londres) Reino
+                    Unido de Gran Bretaña e Irlanda, 22 de febrero de 1857 - Nyeri, (Kenia) Imperio Británico, 8 de
+                    enero de 1941), conocido como Robert Baden-Powell, fue un militar y escritor británico fundador del
+                    Movimiento Scout Mundial.</p>
             </div>
-            
+
             <div class="divAside">
                 <img src="templates/img/favaloro.jpg" alt="foto de rene favaloro">
-                <p>René Favaloro fue un educador y cardiocirujano nacido en La Plata, Argentina, reconocido mundialmente por ser quien desarrolló el bypass coronario con empleo de vena safena.    Estudió medicina en la Universidad Nacional de su ciudad natal, donde se doctoró con una tesis sobre el íleo o interrupción aguda del tránsito intestinal, pero su verdadero interés, del que se daría cuenta más adelante, residía en la cardiología.</p>
+                <p>René Favaloro fue un educador y cardiocirujano nacido en La Plata, Argentina, reconocido mundialmente
+                    por ser quien desarrolló el bypass coronario con empleo de vena safena. Estudió medicina en la
+                    Universidad Nacional de su ciudad natal, donde se doctoró con una tesis sobre el íleo o interrupción
+                    aguda del tránsito intestinal, pero su verdadero interés, del que se daría cuenta más adelante,
+                    residía en la cardiología.</p>
             </div>
         </aside>
-    
+
         <div>
             <div class="divPrincipal">
                 <h1 class="tituloPrin">Grupo Scout Dr Rene Favaloro</h1>
                 <p class="descripPrin">nuestro grupo scout perteneciente a la zona 2 distrito 2</p>
             </div>
-            
+
             <main>
                 <h2>Nuestras ramas</h2>
                 <div class="main-content">
                     <article class="articuloMain">
-                        <a href="detalle.html"><h3>La manada</h3></a>
+                        <a href="detalle.html">
+                            <h3>La manada</h3>
+                        </a>
                         <h4>7 a 11 años</h4>
                         <img src="templates/img/manada.jpg" alt="foto manada">
-                        <p>La Manada es un espacio privilegiado, una atmósfera especial, donde Lobatos y Lobeznas son parte de una Familia Feliz. <br>
-                            Esta atmósfera especial es también un espacio educativo donde se generan estilos de vida; es un espacio de ensayo de la futura vida social, que propicia las relaciones estrechas, espontáneas, respetuosas y que prepara para la vida adulta. Es una atmósfera grata que permite la interiorización de los valores y que entrega oportunidades de crecimiento personal, desarrollando una conciencia crítica en sus integrantes. <br>
-                            La originalidad educativa del Movimiento Scout consiste en que el Lobato y Lobezna viven esta atmósfera a la manera de un juego. Inmersos en ella, casi sin darse cuenta, van simpatizando con un cierto estilo que poco a poco marcará sus jóvenes vidas, permitiéndoles definir su personalidad y construir su propia escala de valores.</p>
+                        <p>La Manada es un espacio privilegiado, una atmósfera especial, donde Lobatos y Lobeznas son
+                            parte de una Familia Feliz. <br>
+                            Esta atmósfera especial es también un espacio educativo donde se generan estilos de vida; es
+                            un espacio de ensayo de la futura vida social, que propicia las relaciones estrechas,
+                            espontáneas, respetuosas y que prepara para la vida adulta. Es una atmósfera grata que
+                            permite la interiorización de los valores y que entrega oportunidades de crecimiento
+                            personal, desarrollando una conciencia crítica en sus integrantes. <br>
+                            La originalidad educativa del Movimiento Scout consiste en que el Lobato y Lobezna viven
+                            esta atmósfera a la manera de un juego. Inmersos en ella, casi sin darse cuenta, van
+                            simpatizando con un cierto estilo que poco a poco marcará sus jóvenes vidas, permitiéndoles
+                            definir su personalidad y construir su propia escala de valores.</p>
                     </article>
                     <article class="articuloMain">
-                        <a href="unidad.html"><h3>La Unidad Scout</h3></a>
+                        <a href="unidad.html">
+                            <h3>La Unidad Scout</h3>
+                        </a>
                         <h4>11 a 14 años</h4>
                         <img src="templates/img/unidad.jpg" alt="foto unidad">
-                        <p>La Unidad Scout es un conjunto de patrullas. El Sistema de Patrullas es una forma de organización y aprendizaje en base al Método Scout, por la cual jóvenes amigos integran en forma libre y con ánimo permanente un pequeño grupo con identidad propia, con el propósito de disfrutar su amistad, apoyarse mutuamente en su desarrollo personal, comprometerse en un proyecto común e interactuar con otros grupos similares. <br>
-                            A través del estilo propio de cada Patrulla, de sus actividades, de sus juegos y del diálogo permanente que se sostiene en su interior, los jóvenes desarrollan una forma personal de participar sin temores e integrarse al mundo.</p>
+                        <p>La Unidad Scout es un conjunto de patrullas. El Sistema de Patrullas es una forma de
+                            organización y aprendizaje en base al Método Scout, por la cual jóvenes amigos integran en
+                            forma libre y con ánimo permanente un pequeño grupo con identidad propia, con el propósito
+                            de disfrutar su amistad, apoyarse mutuamente en su desarrollo personal, comprometerse en un
+                            proyecto común e interactuar con otros grupos similares. <br>
+                            A través del estilo propio de cada Patrulla, de sus actividades, de sus juegos y del diálogo
+                            permanente que se sostiene en su interior, los jóvenes desarrollan una forma personal de
+                            participar sin temores e integrarse al mundo.</p>
                     </article>
                 </div>
                 <div class="linea"></div>
                 <div class="main-content">
                     <article class="articuloMain">
-                        <a href="caminantes.html"><h3>La Comunidad Caminante </h3></a>
+                        <a href="caminantes.html">
+                            <h3>La Comunidad Caminante </h3>
+                        </a>
                         <h4>14 a 17 años</h4>
                         <img src="templates/img/caminante.jpg" alt="foto caminante">
-                        <p>La oferta coeducativa del Programa de Jóvenes para la Rama Caminantes favorece la relación entre los distintos sexos, permitiendo mediante el trabajo de Comunidad, la interrelación entre chicos y chicas; generando espacios y actividades en los Equipos de acuerdo a las necesidades, gustos y diferencias de género. La forma de organización de la Comunidad Caminante busca asegurar la participación adecuada y progresiva de los jóvenes en el proceso de toma de decisiones.</p>
+                        <p>La oferta coeducativa del Programa de Jóvenes para la Rama Caminantes favorece la relación
+                            entre los distintos sexos, permitiendo mediante el trabajo de Comunidad, la interrelación
+                            entre chicos y chicas; generando espacios y actividades en los Equipos de acuerdo a las
+                            necesidades, gustos y diferencias de género. La forma de organización de la Comunidad
+                            Caminante busca asegurar la participación adecuada y progresiva de los jóvenes en el proceso
+                            de toma de decisiones.</p>
                     </article>
                     <article class="articuloMain">
-                        <a href="rovers.html"><h3>La Comunidad Rover</h3></a>
+                        <a href="rovers.html">
+                            <h3>La Comunidad Rover</h3>
+                        </a>
                         <h4>17 a 21 años</h4>
                         <img src="templates/img/rover.jpg" alt="foto rover">
-                        <p>En la Comunidad Rover todo el esfuerzo se orienta a las metas y propósitos enunciados en el Proyecto Educativo de la Asociación. Al final de la etapa Rover, el/la joven debería reflejar el perfil de persona al cual aspiramos como Movimiento. La Rama Rovers tiene el desafío de introducir a los jóvenes en el mundo adulto. En este sentido, los modelos de organización en la Rama se aproximan fuertemente a los mecanismos que se dan en la sociedad civil. <br>
-                            Un modelo de estructura como el que planteamos tiene que considerar, indefectiblemente, la participación activa y directa en el proceso de toma de decisiones de todos los jóvenes que integran la Comunidad Rover junto al equipo de adultos educadores.</p>
+                        <p>En la Comunidad Rover todo el esfuerzo se orienta a las metas y propósitos enunciados en el
+                            Proyecto Educativo de la Asociación. Al final de la etapa Rover, el/la joven debería
+                            reflejar el perfil de persona al cual aspiramos como Movimiento. La Rama Rovers tiene el
+                            desafío de introducir a los jóvenes en el mundo adulto. En este sentido, los modelos de
+                            organización en la Rama se aproximan fuertemente a los mecanismos que se dan en la sociedad
+                            civil. <br>
+                            Un modelo de estructura como el que planteamos tiene que considerar, indefectiblemente, la
+                            participación activa y directa en el proceso de toma de decisiones de todos los jóvenes que
+                            integran la Comunidad Rover junto al equipo de adultos educadores.</p>
                     </article>
                 </div>
 
@@ -82,33 +149,48 @@
                 <div class="main-content">
                     <article class="articuloMain">
                         <h3>Scout Mundial</h3>
-                        <a href="https://www.scout.org/es"><img src="templates/img/scoutMundial.png" alt="foto scout" width="250px"></a>
+                        <a href="https://www.scout.org/es"><img src="templates/img/scoutMundial.png" alt="foto scout"
+                                width="250px"></a>
                         <h4>Misión</h4>
-                        <p>La Misión del Movimiento Scout es contribuir a la educación de los jóvenes, a través de un sistema de valores basado en la Ley y la Promesa Scout, para ayudar a construir un mundo mejor donde las personas se realicen como individuos y desempeñen un papel constructivo en la sociedad.</p>
+                        <p>La Misión del Movimiento Scout es contribuir a la educación de los jóvenes, a través de un
+                            sistema de valores basado en la Ley y la Promesa Scout, para ayudar a construir un mundo
+                            mejor donde las personas se realicen como individuos y desempeñen un papel constructivo en
+                            la sociedad.</p>
                         <p>Esta misión la logramos:</p>
                         <ul>
                             <li>
-                                Comprometiendo a los jóvenes durante sus años de formación en un proceso de educación no formal.
+                                Comprometiendo a los jóvenes durante sus años de formación en un proceso de educación no
+                                formal.
                             </li>
                             <li>
-                                Utilizando un método específico que hace de cada joven, principal agente de su desarrollo, una persona segura de sí misma, solidaria, responsable y comprometida.
+                                Utilizando un método específico que hace de cada joven, principal agente de su
+                                desarrollo, una persona segura de sí misma, solidaria, responsable y comprometida.
                             </li>
                             <li>
-                                Ayudando a los jóvenes a establecer un sistema de valores, basado en principios espirituales, sociales y personales como se expresan en la Promesa y la Ley Scout.
+                                Ayudando a los jóvenes a establecer un sistema de valores, basado en principios
+                                espirituales, sociales y personales como se expresan en la Promesa y la Ley Scout.
                             </li>
                         </ul>
                     </article>
                     <article class="articuloMain">
                         <h3>Scout de Argentina</h3>
-                        <a href="https://www.scouts.org.ar/"><img src="templates/img/Sa.png" alt="foto logo scout argentina" width="100px"></a>
+                        <a href="https://www.scouts.org.ar/"><img src="templates/img/Sa.png"
+                                alt="foto logo scout argentina" width="100px"></a>
                         <h4>Visión</h4>
                         <p>Vemos a Scouts de Argentina como una Organización Educativa...</p>
-        
-                        <p>Integrada por niñas, niños, jóvenes y adultos comprometidos con el estilo de vida Scout, su religión, la construcción de la paz, la defensa de los Derechos Humanos, la autoafirmación de la persona humana, el cuidado de las relaciones interpersonales y el respeto por el Medio Ambiente, orgullosos de pertenecer por los valores que comparten.</p>
-                        
-                        <p>Que trabaja responsablemente en la promoción para el desarrollo de la comunidad, provocando la transformación social a través del crecimiento personal, y de proyectos y espacios compartidos como producto del cumplimiento de la Misión.</p>
-                        
-                        <p>Reconocida por su prestigio en la acción educativa y su capacidad de aprender haciendo; que brinda igualdad de oportunidades; con una propuesta, inclusiva, dinámica, participativa y atractiva para niños, niñas y jóvenes, digna de ser apoyada por la comunidad.</p>
+
+                        <p>Integrada por niñas, niños, jóvenes y adultos comprometidos con el estilo de vida Scout, su
+                            religión, la construcción de la paz, la defensa de los Derechos Humanos, la autoafirmación
+                            de la persona humana, el cuidado de las relaciones interpersonales y el respeto por el Medio
+                            Ambiente, orgullosos de pertenecer por los valores que comparten.</p>
+
+                        <p>Que trabaja responsablemente en la promoción para el desarrollo de la comunidad, provocando
+                            la transformación social a través del crecimiento personal, y de proyectos y espacios
+                            compartidos como producto del cumplimiento de la Misión.</p>
+
+                        <p>Reconocida por su prestigio en la acción educativa y su capacidad de aprender haciendo; que
+                            brinda igualdad de oportunidades; con una propuesta, inclusiva, dinámica, participativa y
+                            atractiva para niños, niñas y jóvenes, digna de ser apoyada por la comunidad.</p>
                     </article>
                 </div>
                 <div class="linea"></div>
@@ -169,7 +251,7 @@
     <footer>
         <nav class="divFooter">
             <img class="logoFooter" src="templates/img/descarga.png" alt="logo GS Rene Favaloro">
-            
+
             <div>
                 <h3 class="titulosLinks">Contactos Jefes de rama:</h3>
                 <ul>
@@ -196,23 +278,30 @@
                 <ul>
                     <li>
                         <i class="fa-solid fa-file"></i>
-                        <a class="footerLinks" href="templates/archivos/Autorizacion-de-Ingreso-de-Ninos-Ninas-y-Jovenes-Menores-de-18-Anos.pdf" target="_blank" >Autorizacion de ingreso para menores</a>
+                        <a class="footerLinks"
+                            href="templates/archivos/Autorizacion-de-Ingreso-de-Ninos-Ninas-y-Jovenes-Menores-de-18-Anos.pdf"
+                            target="_blank">Autorizacion de ingreso para menores</a>
                     </li>
                     <li>
                         <i class="fa-solid fa-file"></i>
-                        <a class="footerLinks" href="templates/archivos/Autorizacion-Anual-para-Salidas-Cercanas.pdf" target="_blank">Autorizacion para salidas cercanas</a>
+                        <a class="footerLinks" href="templates/archivos/Autorizacion-Anual-para-Salidas-Cercanas.pdf"
+                            target="_blank">Autorizacion para salidas cercanas</a>
                     </li>
                     <li>
                         <i class="fa-solid fa-file"></i>
-                        <a class="footerLinks" href="templates/archivos/Formulario-Historia-Clinica.pdf" target="_blank">Formulario de historia clinica</a>
+                        <a class="footerLinks" href="templates/archivos/Formulario-Historia-Clinica.pdf"
+                            target="_blank">Formulario de historia clinica</a>
                     </li>
                     <li>
                         <i class="fa-solid fa-file"></i>
-                        <a class="footerLinks" href="templates/archivos/Formulario-Ficha-Medica.pdf" target="_blank">Formulario de ficha medica</a>
+                        <a class="footerLinks" href="templates/archivos/Formulario-Ficha-Medica.pdf"
+                            target="_blank">Formulario de ficha medica</a>
                     </li>
                     <li>
                         <i class="fa-solid fa-file"></i>
-                        <a class="footerLinks" href="templates/archivos/Declaracion-Jurada-para-Participacion-para-Jovenes-Mayores-de-18-anos-en-Salidas-Acantonamientos-Campamentos.pdf" target="_blank">Autorizacion para mayores de 18</a>
+                        <a class="footerLinks"
+                            href="templates/archivos/Declaracion-Jurada-para-Participacion-para-Jovenes-Mayores-de-18-anos-en-Salidas-Acantonamientos-Campamentos.pdf"
+                            target="_blank">Autorizacion para mayores de 18</a>
                     </li>
                 </ul>
             </div>
@@ -239,9 +328,12 @@
             <div>
                 <div class="socialIcons">
                     <h3 class="titulosLinks">Redes Sociales: </h3>
-                    <a href="#" title="Like us on Facebook"><img src="templates/img/iconos/facebu.png"  alt="Facebook"></a>
-                    <a href="tel:+54112223355" title="RSS Feed"><img src="templates/img/iconos/telefono.png"  alt="Telefono"></a>
-                    <a href="mailto:tomasbond@gmail.com" title="Email Newsletter"><img src="templates/img/iconos/mail.png" alt="Mail"></a>
+                    <a href="#" title="Like us on Facebook"><img src="templates/img/iconos/facebu.png"
+                            alt="Facebook"></a>
+                    <a href="tel:+54112223355" title="RSS Feed"><img src="templates/img/iconos/telefono.png"
+                            alt="Telefono"></a>
+                    <a href="mailto:tomasbond@gmail.com" title="Email Newsletter"><img
+                            src="templates/img/iconos/mail.png" alt="Mail"></a>
                 </div>
             </div>
 
@@ -251,8 +343,11 @@
             Creado por Tomas Bond <br>
             Estudiante de primer año en la UADE
         </p>
-        
-    </footer>
 
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>
