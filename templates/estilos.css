@@ -20,7 +20,10 @@ body{
         font-size: medium;
     }
     .logoImg{
-        max-width: 100px;
+        max-width: 100px !important;
+    }
+    .nav-link{
+        font-size: medium !important;
     }
 
 
@@ -38,7 +41,7 @@ body{
 
     
     .logoFooter{
-        width: 150px !important;
+        width: 100px !important;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -70,15 +73,70 @@ body{
     /*Aside*/
     aside{
         width: 100% !important;
+        margin:16px 0px 16px;
     }
 
     .aside-flex{
         display: block !important;
     }
+    
+    .divAside{
+        margin: 0px !important;
+    }
 
     .divAside img{
         margin: 0;
         width: 30% !important;
+    }
+
+    .divAside p{
+        font-size: small;
+        margin: 0px !important;
+    }
+
+
+
+    /*empieza index*/
+    /*Titulo principal y foto*/
+
+    .divPrincipal{
+        padding: 50px !important;
+    }
+
+    .tituloPrin{
+        font-size: 36px !important;
+        
+    }
+    
+    .descripPrin{
+        font-size: large !important;
+    }
+
+    .divPrincipal:before {
+        background-color: rgba(0, 0, 0, 0.562) !important;
+    }
+
+    /*main*/
+
+    .main-content img{
+        width: 120px !important;
+    }
+
+
+    .articuloMain h3{
+        font-size: medium !important;
+    }
+
+    .articuloMain h4{
+        font-size: small !important;
+    }
+
+    .articuloMain p{
+        font-size: medium !important;
+    }
+
+    .articuloMain li {
+    font-size: medium !important;
     }
 }
 
