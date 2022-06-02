@@ -147,12 +147,18 @@ body{
     }
 
     /*aqui empieza infogral.html*/
-    
-    .main-content{
+    .main-info{
         display: block !important;
-        
-
     }
+
+    .main-info img{
+        width: 100% !important;
+    }
+
+    .articuloInfo{
+        width: 100% !important;
+    }
+
 }
 
 /*header*/
