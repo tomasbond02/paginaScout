@@ -35,17 +35,16 @@ body{
     }
 
     .divFooter ul{
-        text-align: center;
-        padding: 0;
+        padding-left: 50px;
+        list-style: none;
     }
 
     
     .logoFooter{
         width: 100px !important;
-        display: flex;
+        padding-left: 0px !important;
         justify-content: center;
         align-items: center;
-        padding-left: 0px !important;
     }
 
     .titulosLinks{
@@ -66,7 +65,11 @@ body{
         display: flex;
         justify-content: center;
         align-items: center;
-        margin-left: 50px;
+        margin-left: 27px;
+    }
+
+    .documentosDescargables i{
+        padding: 0px;
     }
 
 
@@ -137,6 +140,10 @@ body{
 
     .articuloMain li {
     font-size: medium !important;
+    }
+
+    .fto-mano{
+        width: 50px !important;
     }
 }
 
