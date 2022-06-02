@@ -145,6 +145,14 @@ body{
     .fto-mano{
         width: 50px !important;
     }
+
+    /*aqui empieza infogral.html*/
+    
+    .main-content{
+        display: block !important;
+        
+
+    }
 }
 
 /*header*/
