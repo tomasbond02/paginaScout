@@ -191,6 +191,17 @@ body{
 
     .content img{
         width: 100% !important;
+    
+    }
+
+    /*detalle.html*/
+
+    .divPrincipalManada{
+        padding: 100px 100px !important;
+    }
+
+    .articuloMainManada img{
+        width: 300px !important;
     }
 
 }
