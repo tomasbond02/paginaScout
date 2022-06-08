@@ -202,7 +202,10 @@ body{
 
     .articuloMainManada img{
         width: 100% !important;
+        
     }
+
+    
 
 }
 
@@ -277,7 +280,7 @@ footer{
 /*Titulo principal y foto*/
 
 .divPrincipal{
-    background-image: url(img/caminantes/WhatsApp\ Image\ 2022-04-13\ at\ 8.41.54\ PM.jpeg);
+    background-image: url(../../templates/img/caminantes/WhatsApp\ Image\ 2022-04-13\ at\ 8.41.54\ PM.jpeg);
     padding: 400px 100px;
     text-align: center;
     background-position: center center;
