@@ -86,7 +86,7 @@ products = [
         title.innerText = product.name
 
         const imagen = document.createElement("img")
-        imagen.innerText = product.image
+        imagen.innerHTML = product.image
 
         const description = document.createElement("p")
         description.innerText = product.description
@@ -151,6 +151,7 @@ products = [
   
   
         nodoProducto.appendChild(title)
+        nodoProducto.appendChild(imagen)
         nodoProducto.appendChild(priceAndCount)
         nodoProducto.appendChild(button)
   
