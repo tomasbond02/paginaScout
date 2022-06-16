@@ -19,6 +19,27 @@ products = [
         description:"esto es un teclado",
         price:40,
         image: ""
+    },
+    {
+      id:4,
+      name:"gato",
+      description:"esto es un teclado",
+      price:420,
+      image: ""
+    },
+    {
+      id:5,
+      name:"perro",
+      description:"esto es un teclado",
+      price:340,
+      image: ""
+    },
+    {
+      id:6,
+      name:"camisa",
+      description:"esto es un teclado",
+      price:150,
+      image: "../../templates/img/productos/camisa.jpeg"
     }
     
   ]
@@ -63,7 +84,10 @@ products = [
   
         const title = document.createElement("h5")
         title.innerText = product.name
-  
+
+        const imagen = document.createElement("img")
+        imagen.innerText = product.image
+
         const description = document.createElement("p")
         description.innerText = product.description
   
@@ -76,6 +100,7 @@ products = [
         button.className = "btn btn-primary m-1"
   
         nodoProducto.appendChild(title)
+        nodoProducto.appendChild(imagen)
         nodoProducto.appendChild(description)
         nodoProducto.appendChild(price)
         nodoProducto.appendChild(button)
@@ -111,9 +136,12 @@ products = [
   
         const title = document.createElement("h5")
         title.innerText = element.product.name
+
+        const imagen = document.createElement("img")
+        imagen.innerHTML = element.product.image
   
         const priceAndCount = document.createElement("p")
-        priceAndCount.innerText =  `Cantidad: ${element.count.toString()} | Precio: ${element.product.price.toString()} `
+        priceAndCount.innerText =  `Cantidad: ${element.count.toString()} | Precio: $${element.product.price.toString()} `
         priceAndCount.className = "m-1"
   
         const button = document.createElement("button")
