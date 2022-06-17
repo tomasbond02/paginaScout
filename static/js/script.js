@@ -1,38 +1,41 @@
 products = [
     {
         id:1,
-        name:"Gorra",
-        description:"esto es una gorra",
-        price:20,
-        image: ""
+        name:"Camisa Scout",
+        description:"Camisa reforzada t16/36/38",
+        price:3500,
+        image: "../../templates/img/shop/camisas.jpg",
+        categoria: '',
+        link: 'www.google.com.ar',
+        linkName: 'google'
     },
     {
         id:2,
         name:"Banana",
         description:"esto es una banana",
         price:30,
-        image: ""
+        image: "../../templates/img/productos/camisa.jpeg"
     },
     {
         id:3,
         name:"Teclado",
         description:"esto es un teclado",
         price:40,
-        image: ""
+        image: "../../templates/img/productos/camisa.jpeg"
     },
     {
       id:4,
       name:"gato",
       description:"esto es un teclado",
       price:420,
-      image: ""
+      image: "../../templates/img/productos/camisa.jpeg"
     },
     {
       id:5,
       name:"perro",
       description:"esto es un teclado",
       price:340,
-      image: ""
+      image: "../../templates/img/productos/camisa.jpeg"
     },
     {
       id:6,
@@ -70,6 +73,12 @@ products = [
     localStorage.setItem('carrito', JSON.stringify(carrito))
     renderizarProductosCarrito();
   }
+
+  function modificarProductos(index, Cantidad){
+    carrito[index].count += Cantidad
+    localStorage.setItem('carrito', JSON.stringify(carrito))
+    renderizarProductosCarrito();
+  }
   
   
   function renderizarProductos(){
@@ -80,16 +89,26 @@ products = [
   
     products.forEach(product => {
         let nodoProducto = document.createElement("div")
-        nodoProducto.className = " m-2 border border-primary text-center"
+        nodoProducto.className = "shop"
   
-        const title = document.createElement("h5")
+        let divInterno = document.createElement('div')
+        divInterno.className = ' m-2 border border-primary interno'
+
+        let divDescrip = document.createElement('div')
+        divDescrip.className = 'descrip'
+
+        const title = document.createElement("h3")
         title.innerText = product.name
 
         const imagen = document.createElement("img")
-        imagen.innerHTML = product.image
+        imagen.src = product.image
 
         const description = document.createElement("p")
         description.innerText = product.description
+
+        const aPractica = document.createElement('a')
+        aPractica.href = product.link
+        aPractica.innerText = product.linkName
   
         const price = document.createElement("p")
         price.innerText = `$ ${product.price.toString()}`
@@ -99,11 +118,14 @@ products = [
         button.innerText = "Agregar al Carrito"
         button.className = "btn btn-primary m-1"
   
-        nodoProducto.appendChild(title)
-        nodoProducto.appendChild(imagen)
-        nodoProducto.appendChild(description)
-        nodoProducto.appendChild(price)
-        nodoProducto.appendChild(button)
+        nodoPrincipal.appendChild(title)
+        nodoProducto.appendChild(divInterno)
+        divInterno.appendChild(imagen)
+        divInterno.appendChild(divDescrip)
+        divDescrip.appendChild(description)
+        divDescrip.appendChild(price)
+        divDescrip.appendChild(button)
+        divDescrip.appendChild(aPractica)
   
         nodoPrincipal.appendChild(nodoProducto)
     });

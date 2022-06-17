@@ -524,3 +524,14 @@ h2{
     max-width: 20%;
 }
 
+/*shop*/
+
+.tienda img{
+    width: 10%;
+    margin: 10px;
+}
+
+.interno{
+    display: flex;
+}
+
