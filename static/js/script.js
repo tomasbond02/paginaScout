@@ -5,44 +5,47 @@ products = [
         description:"Camisa reforzada t16/36/38",
         price:3500,
         image: "../../templates/img/shop/camisas.jpg",
-        categoria: '',
-        link: 'www.google.com.ar',
-        linkName: 'google'
+        categoria: ''
     },
     {
         id:2,
         name:"Banana",
         description:"esto es una banana",
         price:30,
-        image: "../../templates/img/productos/camisa.jpeg"
+        image: "../../templates/img/shop/camisas.jpg",
+        categoria: ''
     },
     {
         id:3,
         name:"Teclado",
         description:"esto es un teclado",
         price:40,
-        image: "../../templates/img/productos/camisa.jpeg"
+        image: "../../templates/img/shop/camisas.jpg",
+        categoria: ''
     },
     {
       id:4,
       name:"gato",
       description:"esto es un teclado",
       price:420,
-      image: "../../templates/img/productos/camisa.jpeg"
+      image: "../../templates/img/shop/camisas.jpg",
+      categoria: ''
     },
     {
       id:5,
       name:"perro",
       description:"esto es un teclado",
       price:340,
-      image: "../../templates/img/productos/camisa.jpeg"
+      image: "../../templates/img/shop/camisas.jpg",
+      categoria: ''
     },
     {
       id:6,
       name:"camisa",
       description:"esto es un teclado",
       price:150,
-      image: "../../templates/img/productos/camisa.jpeg"
+      image: "../../templates/img/shop/camisas.jpg",
+      categoria: ''
     }
     
   ]
@@ -74,10 +77,15 @@ products = [
     renderizarProductosCarrito();
   }
 
-  function modificarProductos(index, Cantidad){
-    carrito[index].count += Cantidad
-    localStorage.setItem('carrito', JSON.stringify(carrito))
-    renderizarProductosCarrito();
+  function modificarProductos(index, cantidad){
+    if((carrito[index].count + cantidad)>0){
+      carrito[index].count += cantidad
+      localStorage.setItem('carrito', JSON.stringify(carrito))
+      renderizarProductosCarrito();
+    }
+    else{
+      quitarDelCarrito(index)
+    }
   }
   
   
@@ -89,7 +97,7 @@ products = [
   
     products.forEach(product => {
         let nodoProducto = document.createElement("div")
-        nodoProducto.className = "shop"
+        
   
         let divInterno = document.createElement('div')
         divInterno.className = ' m-2 border border-primary interno'
@@ -105,10 +113,6 @@ products = [
 
         const description = document.createElement("p")
         description.innerText = product.description
-
-        const aPractica = document.createElement('a')
-        aPractica.href = product.link
-        aPractica.innerText = product.linkName
   
         const price = document.createElement("p")
         price.innerText = `$ ${product.price.toString()}`
@@ -118,15 +122,19 @@ products = [
         button.innerText = "Agregar al Carrito"
         button.className = "btn btn-primary m-1"
   
-        nodoPrincipal.appendChild(title)
-        nodoProducto.appendChild(divInterno)
+        
+        
+        
         divInterno.appendChild(imagen)
-        divInterno.appendChild(divDescrip)
+        
+        divDescrip.appendChild(title)
         divDescrip.appendChild(description)
         divDescrip.appendChild(price)
         divDescrip.appendChild(button)
-        divDescrip.appendChild(aPractica)
-  
+
+
+        divInterno.appendChild(divDescrip)
+        nodoProducto.appendChild(divInterno)
         nodoPrincipal.appendChild(nodoProducto)
     });
   }
@@ -162,21 +170,38 @@ products = [
         const imagen = document.createElement("img")
         imagen.innerHTML = element.product.image
   
-        const priceAndCount = document.createElement("p")
-        priceAndCount.innerText =  `Cantidad: ${element.count.toString()} | Precio: $${element.product.price.toString()} `
-        priceAndCount.className = "m-1"
+        const price = document.createElement("p")
+        price.innerText =  `Precio: $${element.product.price.toString()} `
+        price.className = "m-1"
   
-        const button = document.createElement("button")
-        button.onclick = function(){ quitarDelCarrito(i)  }
-        button.innerText = "Quitar"
-        button.className = "btn btn-danger m-1"
-  
+        const buttonQuitar = document.createElement("button")
+        buttonQuitar.onclick = function(){ quitarDelCarrito(i)  }
+        buttonQuitar.innerText = "Quitar"
+        buttonQuitar.className = "btn btn-danger m-1"
+
+        const cantidad = document.createElement("span")
+        cantidad.innerText = element.count.toString()
+
+        const buttonMas = document.createElement("button")
+        buttonMas.onclick = function(){ modificarProductos(i,1)}
+        buttonMas.innerText = '+'
+
+        const buttonMenos = document.createElement("button")
+        buttonMenos.onclick = function(){ modificarProductos(i,-1)}
+        buttonMenos.innerText = '-'
+
+        let nodoCantidad = document.createElement("div")
+        nodoCantidad.className = " d-flex justify-content-center m-2"
   
         nodoProducto.appendChild(title)
         nodoProducto.appendChild(imagen)
-        nodoProducto.appendChild(priceAndCount)
-        nodoProducto.appendChild(button)
-  
+        nodoProducto.appendChild(price)
+        nodoCantidad.appendChild(buttonMenos)
+        nodoCantidad.appendChild(cantidad)
+        nodoCantidad.appendChild(buttonMas)
+        nodoProducto.appendChild(nodoCantidad)
+        nodoProducto.appendChild(buttonQuitar)
+      
         nodoPrincipal.appendChild(nodoProducto)
     };
   
@@ -190,7 +215,10 @@ products = [
     });
     let notificationDivCount = document.getElementById("notificationDivCount")
     if(notificationDivCount!=null & count!=0){
-      notificationDivCount.innerHTML = notificationDivCount.innerHTML + `<span class="badge">${count}</span>`
+      notificationDivCount.innerHTML =  `<img src="templates/img/iconos/3144456.png" alt="carrito" style="width: 50px;"><span class="badge">${count}</span>`
+    }
+    if(count == 0){
+      notificationDivCount.innerHTML = ''
     }
   }
   

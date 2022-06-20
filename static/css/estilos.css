@@ -526,12 +526,18 @@ h2{
 
 /*shop*/
 
+.tienda{
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
 .tienda img{
-    width: 10%;
-    margin: 10px;
+    height: 200px;
 }
 
 .interno{
     display: flex;
 }
+
 
