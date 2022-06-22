@@ -167,7 +167,7 @@ products = [
         priceTotal = priceTotal + (element.product.price * element.count)
   
         let nodoProducto = document.createElement("div")
-        nodoProducto.className = "d-flex justify-content-between w-50 p-3 border"
+        nodoProducto.className = "d-flex justify-content-between align-items-center border"
   
         const title = document.createElement("h5")
         title.innerText = element.product.name

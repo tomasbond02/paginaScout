@@ -223,10 +223,9 @@ body{
         
     }
 
-    /*aqui empieza carrito*/
-    
-    
-    
+    #carrito h5{
+        font-size: 1rem;
+    }
 
 }
 
