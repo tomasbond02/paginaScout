@@ -5,44 +5,44 @@ products = [
         description:"Camisa reforzada t16/36/38",
         price:3500,
         image: "../../templates/img/shop/camisas.jpg",
-        categoria: ''
+        categoria: 'Vestimenta'
     },
     {
         id:2,
-        name:"Banana",
-        description:"esto es una banana",
-        price:30,
+        name:"Pañuelo Scout",
+        description:"Pañuelo scout del grupo scout Rene Favaloro",
+        price:300,
         image: "../../templates/img/shop/camisas.jpg",
-        categoria: ''
+        categoria: 'Vestimenta'
     },
     {
         id:3,
-        name:"Teclado",
-        description:"esto es un teclado",
+        name:"Insignia Rover",
+        description:"insignia rover de descubrimiento",
         price:40,
         image: "../../templates/img/shop/camisas.jpg",
         categoria: ''
     },
     {
       id:4,
-      name:"gato",
-      description:"esto es un teclado",
+      name:"Insignia Caminante",
+      description:"Insignia caminante de superacion",
       price:420,
       image: "../../templates/img/shop/camisas.jpg",
       categoria: ''
     },
     {
       id:5,
-      name:"perro",
-      description:"esto es un teclado",
+      name:"cuchillo",
+      description:"esto es un cuchillo de caza",
       price:340,
       image: "../../templates/img/shop/camisas.jpg",
       categoria: ''
     },
     {
       id:6,
-      name:"camisa",
-      description:"esto es un teclado",
+      name:"Sombrero scout",
+      description:"sombrero recreativo scout",
       price:150,
       image: "../../templates/img/shop/camisas.jpg",
       categoria: ''
@@ -86,6 +86,12 @@ products = [
     else{
       quitarDelCarrito(index)
     }
+  }
+
+  function vaciarCarrito(){
+    carrito = []
+    localStorage.setItem('carrito', JSON.stringify(carrito))
+      renderizarProductosCarrito();
   }
   
   
