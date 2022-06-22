@@ -167,23 +167,18 @@ products = [
         priceTotal = priceTotal + (element.product.price * element.count)
   
         let nodoProducto = document.createElement("div")
-        nodoProducto.className = " m-2 border border-primary text-center"
-  
+        nodoProducto.className = "d-flex justify-content-between w-50 p-3 border"
   
         const title = document.createElement("h5")
         title.innerText = element.product.name
-
-        const imagen = document.createElement("img")
-        imagen.innerHTML = element.product.image
   
         const price = document.createElement("p")
-        price.innerText =  `Precio: $${element.product.price.toString()} `
-        price.className = "m-1"
+        price.innerText =  `Precio: $${element.product.price.toString()}`
   
         const buttonQuitar = document.createElement("button")
         buttonQuitar.onclick = function(){ quitarDelCarrito(i)  }
         buttonQuitar.innerText = "Quitar"
-        buttonQuitar.className = "btn btn-danger m-1"
+        buttonQuitar.className = "btn btn-danger"
 
         const cantidad = document.createElement("span")
         cantidad.innerText = element.count.toString()
@@ -197,14 +192,14 @@ products = [
         buttonMenos.innerText = '-'
 
         let nodoCantidad = document.createElement("div")
-        nodoCantidad.className = " d-flex justify-content-center m-2"
   
         nodoProducto.appendChild(title)
-        nodoProducto.appendChild(imagen)
         nodoProducto.appendChild(price)
+
         nodoCantidad.appendChild(buttonMenos)
         nodoCantidad.appendChild(cantidad)
         nodoCantidad.appendChild(buttonMas)
+        
         nodoProducto.appendChild(nodoCantidad)
         nodoProducto.appendChild(buttonQuitar)
       
