@@ -91,7 +91,7 @@ products = [
   function vaciarCarrito(){
     carrito = []
     localStorage.setItem('carrito', JSON.stringify(carrito))
-      renderizarProductosCarrito();
+    renderizarProductosCarrito();
   }
   
   
