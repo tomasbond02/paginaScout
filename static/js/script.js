@@ -1,4 +1,4 @@
-products = [
+var products = [
     {
         id:1,
         name:"Camisa Scout",
@@ -49,7 +49,7 @@ products = [
     }
     
   ]
-  carrito = []
+  var carrito = []
   
   function agregarACarrito(index){
      
@@ -217,10 +217,7 @@ products = [
     let notificationDivCount = document.getElementById("notificationDivCount")
     if(notificationDivCount!=null & count!=0){
       notificationDivCount.innerHTML =  `<img src="templates/img/iconos/3144456.png" alt="carrito" style="width: 50px;"><span class="badge">${count}</span>`
-    }
-    if(count == 0){
-      notificationDivCount.innerHTML = ''
-    }
+    } 
   }
   
   setTimeout(() => {
