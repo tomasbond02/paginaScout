@@ -1,3 +1,5 @@
+//Tomas Bond - Ivo Garcia Kirst 
+
 var products = [
     {
         id:1,
@@ -21,7 +23,7 @@ var products = [
         description:"insignia rover de descubrimiento",
         price:40,
         image: "../../templates/img/shop/camisas.jpg",
-        categoria: ''
+        categoria: 'insignias'
     },
     {
       id:4,
@@ -29,7 +31,7 @@ var products = [
       description:"Insignia caminante de superacion",
       price:420,
       image: "../../templates/img/shop/camisas.jpg",
-      categoria: ''
+      categoria: 'insignias'
     },
     {
       id:5,
@@ -37,7 +39,7 @@ var products = [
       description:"esto es un cuchillo de caza",
       price:340,
       image: "../../templates/img/shop/camisas.jpg",
-      categoria: ''
+      categoria: 'materiales'
     },
     {
       id:6,
@@ -45,7 +47,7 @@ var products = [
       description:"sombrero recreativo scout",
       price:150,
       image: "../../templates/img/shop/camisas.jpg",
-      categoria: ''
+      categoria: 'vestimentas'
     }
     
   ]
@@ -119,6 +121,9 @@ var products = [
 
         const description = document.createElement("p")
         description.innerText = product.description
+
+        const categoria = document.createElement('p')
+        categoria.innerText = product.categoria
   
         const price = document.createElement("p")
         price.innerText = `$ ${product.price.toString()}`
@@ -135,6 +140,7 @@ var products = [
         
         divDescrip.appendChild(title)
         divDescrip.appendChild(description)
+        divDescrip.appendChild(categoria)
         divDescrip.appendChild(price)
         divDescrip.appendChild(button)
 
