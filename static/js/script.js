@@ -22,7 +22,7 @@ var products = [
         name:"Insignia Rover",
         description:"insignia rover de descubrimiento",
         price:40,
-        image: "../../templates/img/shop/camisas.jpg",
+        image: "templates/img/shop/camisas.jpg",
         categoria: 'insignias'
     },
     {
@@ -30,7 +30,7 @@ var products = [
       name:"Insignia Caminante",
       description:"Insignia caminante de superacion",
       price:420,
-      image: "../../templates/img/shop/camisas.jpg",
+      image: "templates/img/shop/camisas.jpg",
       categoria: 'insignias'
     },
     {
@@ -38,7 +38,7 @@ var products = [
       name:"cuchillo",
       description:"esto es un cuchillo de caza",
       price:340,
-      image: "../../templates/img/shop/camisas.jpg",
+      image: "templates/img/shop/camisas.jpg",
       categoria: 'materiales'
     },
     {
@@ -46,7 +46,7 @@ var products = [
       name:"Sombrero scout",
       description:"sombrero recreativo scout",
       price:150,
-      image: "../../templates/img/shop/camisas.jpg",
+      image: "templates/img/shop/camisas.jpg",
       categoria: 'vestimentas'
     }
     
