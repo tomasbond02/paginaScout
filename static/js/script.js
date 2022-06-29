@@ -69,6 +69,7 @@ var products = [
             count:1
         })
     }
+    alert("Agregado al carrito")
     localStorage.setItem('carrito', JSON.stringify(carrito))
     renderizarProductosCarrito();
   }
@@ -129,7 +130,7 @@ var products = [
         price.innerText = `$ ${product.price.toString()}`
   
         let button = document.createElement("button")
-        button.onclick = function(){ agregarACarrito(product.id - 1)  }
+        button.onclick = function(){ agregarACarrito(product.id - 1)}
         button.innerText = "Agregar al Carrito"
         button.className = "btn btn-primary m-1"
   
