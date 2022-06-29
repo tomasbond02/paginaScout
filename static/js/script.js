@@ -212,7 +212,7 @@ var products = [
       
         nodoPrincipal.appendChild(nodoProducto)
     };
-  
+    
     priceCart.innerText = `Total del carrito $ ${priceTotal.toString()}`
   }
   
